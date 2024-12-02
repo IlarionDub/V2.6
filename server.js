@@ -9,9 +9,9 @@ const middlewares = jsonServer.defaults();  // Стандартні middlewares 
 
 // Налаштування CORS
 const corsOptions = {
-    origin: ['https://ilariondub.github.io'],
+    origin: ['http://localhost:3000', 'https://ilariondub.github.io'],  // Дозволяємо доступ з цих доменів
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    credentials: true,
+    credentials: true, // Дозволяємо використання cookies та аутентифікації
 };
 
 // Налаштування серверу
