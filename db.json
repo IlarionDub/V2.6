@@ -1,0 +1,157 @@
+{
+  "posts": [
+    {
+      "id": "907e",
+      "title": "THE BEST POST!!!",
+      "content": "NO COMMENT!!!",
+      "image": null,
+      "date": "29/11/2024",
+      "author": "1",
+      "comments": [
+        {
+          "author": "1",
+          "text": ":)",
+          "date": "29/11/2024"
+        },
+        {
+          "author": "1",
+          "text": "_____-------_____",
+          "date": "29/11/2024"
+        },
+        {
+          "author": "1",
+          "text": "<->",
+          "date": "29/11/2024"
+        },
+        {
+          "author": "2",
+          "text": "отодлот",
+          "date": "29/11/2024"
+        },
+        {
+          "author": "2",
+          "text": "BRAVO!!!",
+          "date": "29/11/2024"
+        }
+      ]
+    },
+    {
+      "id": "b77a",
+      "title": "Football",
+      "content": "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football generally means the form of football that is the most popular where the word is used. Sports commonly called football include association football (known as soccer in Australia, Canada, South Africa, the United States, and sometimes in Ireland and New Zealand); Australian rules football; Gaelic football; gridiron football (specifically American football, arena football, or Canadian football); International rules football; rugby league football; and rugby union football.[1] These various forms of football share, to varying degrees, common origins and are known as \"football codes\".",
+      "image": null,
+      "date": "29/11/2024",
+      "author": "1",
+      "comments": [
+        {
+          "author": "1",
+          "text": "++++++",
+          "date": "29/11/2024"
+        }
+      ]
+    },
+    {
+      "id": "e7f7",
+      "title": "Instagram",
+      "content": "Instagram[a] is an American photo and video sharing social networking service owned by Meta Platforms. It allows users to upload media that can be edited with filters, be organized by hashtags, and be associated with a location via geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tags and locations, view trending content, like photos, and follow other users to add their content to a personal feed.[8] A Meta-operated image-centric social media platform, it is available on iOS, Android, Windows 10, and the web. Users can take photos and edit them using built-in filters and other tools, then share them on other social media platforms like Facebook. It supports 32 languages including English, Hindi, Spanish, French, Korean, and Japanese.[9]",
+      "image": null,
+      "date": "29/11/2024",
+      "author": "1",
+      "comments": [
+        {
+          "author": "1",
+          "text": "!!!!!!",
+          "date": "29/11/2024"
+        }
+      ]
+    },
+    {
+      "id": "ad90",
+      "title": "!!!!!!!",
+      "content": "PLEASE!!!!",
+      "image": null,
+      "date": "30/11/2024",
+      "author": "3",
+      "comments": []
+    },
+    {
+      "id": "71ca",
+      "title": "!!!",
+      "content": "@@@k",
+      "image": null,
+      "date": "30/11/2024",
+      "author": "4",
+      "comments": [
+        {
+          "author": "4",
+          "text": "jnnjnjknjk",
+          "date": "30/11/2024"
+        },
+        {
+          "author": "11",
+          "text": "!!!",
+          "date": "01/12/2024"
+        }
+      ]
+    },
+    {
+      "id": "4b82",
+      "title": "MY NAME IS?",
+      "content": "--..---.",
+      "image": null,
+      "date": "01/12/2024",
+      "author": "11",
+      "comments": []
+    }
+  ],
+  "users": [
+    {
+      "id": "653c",
+      "name": "1",
+      "email": "1@1",
+      "password": "Aa@12345678"
+    },
+    {
+      "id": "a5b4",
+      "name": "2",
+      "email": "2@2",
+      "password": "Aa@12345678"
+    },
+    {
+      "id": "853f",
+      "name": "3",
+      "email": "3@3",
+      "password": "Aa@12345678"
+    },
+    {
+      "id": "adac",
+      "name": "4",
+      "email": "4@4",
+      "password": "Aa@12345678"
+    },
+    {
+      "id": "4f91",
+      "name": "5",
+      "email": "5@5",
+      "password": "Aa@12345678"
+    },
+    {
+      "id": "da6c",
+      "name": "11",
+      "email": "11@gmail.com",
+      "password": "Aa@12345678"
+    },
+    {
+      "id": "5b48",
+      "name": "a",
+      "email": "admin@gmail.com",
+      "password": "Aa@12345678"
+    },
+    {
+      "id": "c8ec",
+      "name": "Som",
+      "email": "som@gmail.com",
+      "password": "Aa@12345678"
+    }
+  ]
+}
