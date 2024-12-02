@@ -1,28 +1,32 @@
-
 const cors = require('cors');
 const jsonServer = require('json-server');
 const express = require('express');
 
-const router = jsonServer.router('db.json'); // Використання db.json як джерела даних
+// Ініціалізація json-server
 const app = express();
-const middlewares = jsonServer.defaults(); // Замість `create`
+const router = jsonServer.router('db.json'); // Використовуємо db.json як джерело даних
+const middlewares = jsonServer.defaults();  // Стандартні middlewares json-server
 
+// Налаштування CORS
 const corsOptions = {
     origin: ['https://ilariondub.github.io'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true,
 };
 
-app.use('/api', router); // Додаємо маршрутизатор на /api
+// Налаштування серверу
+app.use(cors(corsOptions)); // Додаємо підтримку CORS
+app.use(middlewares);       // Використовуємо стандартні middlewares json-server
+app.use(express.json());    // Додаємо middleware для роботи з JSON
 
-// Налаштування middleware
-app.use(cors(corsOptions)); // Додати підтримку CORS
-app.use(middlewares);
+// Налаштування маршруту
+app.use('/api', router);    // Додаємо маршрутизатор на /api (замість /)
+
+// Безпека
 app.use((req, res, next) => {
     res.setHeader("Content-Security-Policy", "default-src 'self';");
     next();
 });
-
 
 // Запуск сервера
 app.listen(3000, () => {
