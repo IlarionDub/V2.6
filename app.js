@@ -349,6 +349,10 @@ function loadPosts() {
 
 }
 
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 function showPost(index) {
     const app = document.getElementById("app");
     const post = posts[index];
@@ -415,14 +419,16 @@ function showPost(index) {
             ` : ""}
         </div>
         <footer>
-            <button ${index === 0 ? "disabled" : ""} onclick="showPreviousPost()">Previous</button>
-            <button ${index === posts.length - 1 ? "disabled" : ""} onclick="showNextPost()">Next</button>
-            <button onclick="window.location.hash = '#addPost'">Add Post</button>
-            <button onclick="window.location.hash = '#home'">Home</button>
+            <button ${index === 0 ? "disabled" : ""} onclick="showPreviousPost(); scrollToTop();">Previous</button>
+            <button ${index === posts.length - 1 ? "disabled" : ""} onclick="showNextPost(); scrollToTop();">Next</button>
+            <button onclick="window.location.hash = '#addPost';  scrollToTop();">Add Post</button>
+            <button onclick="window.location.hash = '#home';scrollToTop();">Home</button>
         </footer>
     `;
     updateUserUI();
 }
+
+
 
 
 async function showPostForm(isEdit = false, postIndex = null) {
@@ -567,9 +573,11 @@ function renderCommentPagination(totalComments) {
 
     return `
         <div class="pagination">
+        <footer> 
             <button ${currentCommentPage === 0 ? "disabled" : ""} onclick="showPreviousComments()">Previous Comments</button>
             <span>Page ${currentCommentPage + 1} of ${totalPages}</span>
             <button ${currentCommentPage === totalPages - 1 ? "disabled" : ""} onclick="showNextComments()">Next Comments</button>
+            </footer>
         </div>
     `;
 }
